@@ -36,11 +36,7 @@
 
 .pipe-game {
     position: absolute;
-<<<<<<< HEAD
-    bottom: 59px;
-=======
-    bottom: 65px;
->>>>>>> 3ad0b4c3a9190e7752c87b4e922044b91966a855
+    bottom: 76px;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -58,11 +54,7 @@
 .peach-game {
     width: 85px;
     position: absolute;
-<<<<<<< HEAD
-    bottom: 55px;
-=======
-    bottom: 65px;
->>>>>>> 3ad0b4c3a9190e7752c87b4e922044b91966a855
+    bottom: 73px;
     left: 2rem;
     z-index: 1;
 }
@@ -70,22 +62,14 @@
 .super-mario {
     width: 155px;
     position: absolute;
-<<<<<<< HEAD
-    bottom: 55px;
-=======
-    bottom: 65px;
->>>>>>> 3ad0b4c3a9190e7752c87b4e922044b91966a855
+    bottom: 75px;
     z-index: 1;
 }
 
 .luigi-game {
     width: 192px;
     position: absolute;
-<<<<<<< HEAD
-    bottom: 35px;
-=======
-    bottom: 65px;
->>>>>>> 3ad0b4c3a9190e7752c87b4e922044b91966a855
+    bottom: 55px;
     z-index: 1;
 }
 
@@ -97,7 +81,7 @@
 
 .green-koopa {
     position: absolute;
-    bottom: 55px;
+    bottom: 73px;
     width: 60px;
     animation: koopa-animation 15s infinite linear;
 
@@ -132,7 +116,7 @@
 
 @keyframes ground-animation {
     from {
-        right: -6500px;
+        right: -7000px;
     }
 
     to {
@@ -143,11 +127,7 @@
 
 @keyframes ground-animation2 {
     from {
-<<<<<<< HEAD
         right: -6600px;
-=======
-        right: -7450px;
->>>>>>> 3ad0b4c3a9190e7752c87b4e922044b91966a855
     }
 
     to {
