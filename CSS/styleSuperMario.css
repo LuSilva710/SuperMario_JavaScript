@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.game {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#269fcf, #E0F6FF);
+}
+
+.score {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #f9cc03;
+    text-shadow: 3px 3px 3px #090909;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.pipe-game {
+    position: absolute;
+    bottom: 76px;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.bullet {
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    right: -50px;
+    animation: bullet-animation-1 10s infinite linear;
+    animation-delay: 5s;
+    z-index: 3;
+}
+
+.peach-game {
+    width: 85px;
+    position: absolute;
+    bottom: 73px;
+    left: 2rem;
+    z-index: 1;
+}
+
+.super-mario {
+    width: 155px;
+    position: absolute;
+    bottom: 73px;
+    z-index: 1;
+}
+
+.luigi-game {
+    width: 192px;
+    position: absolute;
+    bottom: 53px;
+    z-index: 1;
+}
+
+.jump-peach,
+.jump-mario,
+.jump-luigi {
+    animation: mario-animation 800ms ease-out;
+}
+
+.green-koopa {
+    position: absolute;
+    bottom: 69px;
+    width: 60px;
+    animation: koopa-animation 15s infinite linear;
+
+}
+
+.clouds-game {
+    position: absolute;
+    top: 2rem;
+    width: 400px;
+    padding: 55px;
+    animation: clouds-animation 20s infinite linear;
+    z-index: 1;
+}
+
+.ground-game {
+    position: absolute;
+    bottom: -22px;
+    height: 100vh;
+    overflow: hidden;
+    animation: ground-animation 1000s infinite linear;
+    z-index: 0;
+}
+
+.ground-game-peach {
+    position: absolute;
+    bottom: -22px;
+    height: 100vh;
+    overflow: hidden;
+    animation: ground-animation2 1000s infinite linear;
+    z-index: 0;
+}
+
+@keyframes ground-animation {
+    from {
+        right: -7000px;
+    }
+
+    to {
+        right: 500%;
+    }
+}
+
+
+@keyframes ground-animation2 {
+    from {
+        right: -8450px;
+    }
+
+    to {
+        right: 500%;
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+@keyframes mario-animation {
+    0% {
+        bottom: 0;
+    }
+
+    10% {
+        bottom: 100px;
+    }
+
+    20% {
+        bottom: 180px;
+    }
+
+    40% {
+        bottom: 220px;
+    }
+
+    50% {
+        bottom: 250px;
+    }
+
+    60% {
+        bottom: 250px;
+    }
+
+    70% {
+        bottom: 220px;
+    }
+
+    80% {
+        bottom: 180px;
+    }
+
+    90% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+
+}
+
+
+@keyframes koopa-animation {
+    0% {
+        right: -50px;
+    }
+
+    20% {
+        right: 100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes bullet-animation-1 {
+    0% {
+        right: -50px;
+    }
+
+    20% {
+        right: 100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.restart-game{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.game-over{
+    display: none;
+}
+
+.game-over h3{
+    margin: 0;
+    font-size: 3rem;
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    color: #f9cc03;
+    text-shadow: 3px 3px 3px #090909;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.restart{
+    width: 150px;
+    text-align: center;
+    border: 5px solid white;
+    background-color: #FF0004;
+    box-shadow: 5px 5px black;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: none;
+}
+.restart a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+   
+}
+.restart h3{
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    color: #f9cc03;
+    text-shadow: 3px 3px 3px #090909;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.restart:hover{
+    transform: translate(10px);
+    box-shadow: none;
+}

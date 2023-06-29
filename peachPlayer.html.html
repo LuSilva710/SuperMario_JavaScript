@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styleSuperMario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>PRINCESS PEACH</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game">
+
+            <div class="restart-game">
+                <div class="game-over">
+                    <h3>GAME OVER</h3>
+                </div>
+                <div class="restart">
+                    <a href="index.html">
+                        <h3>RESTART</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="score">
+                <h4>SCORE <span class="score-number"></span></h4>
+            </div>
+
+            <img src="./Imagens/clouds-gamer.png" class="clouds-game" alt="conjunto de nuvens" />
+            <img src="./Imagens/peach-gif.gif" class="peach-game" alt="gif da Peach correndo" />
+            <img src="./Imagens/ground_yoshi2_island.png" class="ground-game-peach"
+                alt="gramado com alguns obstáculos" />
+            <img src="./Imagens/pipe-game.png" class="pipe-game" alt="cano verde" />
+            <img src="./Imagens/bullet-mario.png" class="bullet" alt="imgem da bala de canhão">
+            <img src="./Imagens/Greenkoopa.gif" class="green-koopa" alt="gif do koopa verde andando">
+            <audio id="mario-theme" autoplay>
+                <source src="./Audio/audio_theme.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="mario-jump-small">
+                <source src="./Audio/sources_audio_smb_jump-small.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <script src="./JS/scriptPeach.js"></script>
+</body>
+
+</html>
