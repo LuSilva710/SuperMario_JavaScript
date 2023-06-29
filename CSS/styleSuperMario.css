@@ -36,7 +36,7 @@
 
 .pipe-game {
     position: absolute;
-    bottom: 76px;
+    bottom: 65px;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -54,7 +54,7 @@
 .peach-game {
     width: 85px;
     position: absolute;
-    bottom: 73px;
+    bottom: 65px;
     left: 2rem;
     z-index: 1;
 }
@@ -62,14 +62,14 @@
 .super-mario {
     width: 155px;
     position: absolute;
-    bottom: 73px;
+    bottom: 65px;
     z-index: 1;
 }
 
 .luigi-game {
     width: 192px;
     position: absolute;
-    bottom: 53px;
+    bottom: 65px;
     z-index: 1;
 }
 
@@ -116,7 +116,7 @@
 
 @keyframes ground-animation {
     from {
-        right: -7000px;
+        right: -6500px;
     }
 
     to {
@@ -127,7 +127,7 @@
 
 @keyframes ground-animation2 {
     from {
-        right: -8450px;
+        right: -7450px;
     }
 
     to {
