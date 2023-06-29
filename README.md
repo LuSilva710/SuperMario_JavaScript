@@ -1,7 +1,7 @@
 # SuperMario - Desafio StartSe Módulo VII
 
 <h1 align="center"><b>Super Mario - JavaScript</b></h1>
-<h1 align="center"><img src="SuperMario.png"></h1>
+<h1 align="center"><img src="./Imagens/SuperMario.png"></h1>
 
 
 <h1 >📚  Sobre</h1>
