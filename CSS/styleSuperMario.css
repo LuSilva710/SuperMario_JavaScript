@@ -36,7 +36,7 @@
 
 .pipe-game {
     position: absolute;
-    bottom: 53px;
+    bottom: 56px;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -54,7 +54,7 @@
 .peach-game {
     width: 85px;
     position: absolute;
-    bottom: 50px;
+    bottom: 52px;
     left: 2rem;
     z-index: 1;
 }
@@ -62,7 +62,7 @@
 .super-mario {
     width: 155px;
     position: absolute;
-    bottom: 50px;
+    bottom: 52px;
     z-index: 1;
 }
 
@@ -81,7 +81,7 @@
 
 .green-koopa {
     position: absolute;
-    bottom: 65px;
+    bottom: 59px;
     width: 60px;
     animation: koopa-animation 15s infinite linear;
 
