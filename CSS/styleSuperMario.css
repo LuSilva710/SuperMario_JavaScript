@@ -54,7 +54,7 @@
 .peach-game {
     width: 85px;
     position: absolute;
-    bottom: 73px;
+    bottom: 60px;
     left: 2rem;
     z-index: 1;
 }
@@ -62,14 +62,14 @@
 .super-mario {
     width: 155px;
     position: absolute;
-    bottom: 75px;
+    bottom: 63px;
     z-index: 1;
 }
 
 .luigi-game {
     width: 192px;
     position: absolute;
-    bottom: 55px;
+    bottom: 38px;
     z-index: 1;
 }
 
@@ -81,7 +81,7 @@
 
 .green-koopa {
     position: absolute;
-    bottom: 73px;
+    bottom: 65px;
     width: 60px;
     animation: koopa-animation 15s infinite linear;
 
@@ -116,7 +116,7 @@
 
 @keyframes ground-animation {
     from {
-        right: -7000px;
+        right: -6000px;
     }
 
     to {
