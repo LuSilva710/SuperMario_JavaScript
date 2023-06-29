@@ -36,7 +36,7 @@
 
 .pipe-game {
     position: absolute;
-    bottom: 76px;
+    bottom: 53px;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -54,7 +54,7 @@
 .peach-game {
     width: 85px;
     position: absolute;
-    bottom: 60px;
+    bottom: 50px;
     left: 2rem;
     z-index: 1;
 }
@@ -62,14 +62,14 @@
 .super-mario {
     width: 155px;
     position: absolute;
-    bottom: 63px;
+    bottom: 50px;
     z-index: 1;
 }
 
 .luigi-game {
     width: 192px;
     position: absolute;
-    bottom: 38px;
+    bottom: 33px;
     z-index: 1;
 }
 
