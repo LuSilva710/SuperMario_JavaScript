@@ -291,7 +291,6 @@
     box-shadow: none;
 }
 
-
 @media (max-width: 490px) {
     .container {
         position: relative;
