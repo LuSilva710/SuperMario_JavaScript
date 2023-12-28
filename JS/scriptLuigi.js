@@ -51,7 +51,7 @@ const loopGame = setInterval(() => {
         ground.style.left = `${groundPosition}px`
 
         luigi.src = "./Imagens/luigi-gameover.webp";
-        luigi.style.width = "75px";
+        luigi.style.width = "65px";
         luigi.style.marginLeft = "45px";
         audioStart.src = "Audio/audio_gameover.mp3";
         

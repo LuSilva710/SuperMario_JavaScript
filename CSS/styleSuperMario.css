@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -36,8 +37,8 @@
 
 .pipe-game {
     position: absolute;
-    bottom: 76px;
-    width: 80px;
+    bottom: 55px;
+    width: 50px;
     animation: pipe-animation 1.5s infinite linear;
 }
 
@@ -52,24 +53,24 @@
 }
 
 .peach-game {
-    width: 85px;
+    width: 50px;
     position: absolute;
-    bottom: 60px;
+    bottom: 55px;
     left: 2rem;
     z-index: 1;
 }
 
 .super-mario {
-    width: 155px;
+    width: 115px;
     position: absolute;
-    bottom: 63px;
+    bottom: 56px;
     z-index: 1;
 }
 
 .luigi-game {
-    width: 192px;
+    width: 115px;
     position: absolute;
-    bottom: 38px;
+    bottom: 40px;
     z-index: 1;
 }
 
@@ -81,8 +82,8 @@
 
 .green-koopa {
     position: absolute;
-    bottom: 65px;
-    width: 60px;
+    bottom: 55px;
+    width: 30px;
     animation: koopa-animation 15s infinite linear;
 
 }
@@ -228,7 +229,7 @@
     }
 }
 
-.restart-game{
+.restart-game {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -239,11 +240,11 @@
     z-index: 5;
 }
 
-.game-over{
+.game-over {
     display: none;
 }
 
-.game-over h3{
+.game-over h3 {
     margin: 0;
     font-size: 3rem;
     width: 100%;
@@ -256,35 +257,134 @@
     -webkit-text-stroke-color: #000;
 }
 
-.restart{
+.restart {
     width: 150px;
     text-align: center;
-    border: 5px solid white;
+    border: 2px solid white;
     background-color: #FF0004;
     box-shadow: 5px 5px black;
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 15px 5px;
     display: none;
 }
-.restart a{
+
+.restart a {
     display: inline-block;
     width: 100%;
     text-decoration: none;
-   
+
 }
-.restart h3{
+
+.restart h3 {
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     font-size: 1rem;
-    font-weight: bold;
     font-family: 'Press Start 2P', cursive;
     color: #f9cc03;
-    text-shadow: 3px 3px 3px #090909;
+    text-shadow: 2px 2px 2px #090909;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
 }
 
-.restart:hover{
+.restart:hover {
     transform: translate(10px);
     box-shadow: none;
+}
+
+
+@media (max-width: 490px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .game {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(#269fcf, #E0F6FF);
+    }
+
+    .score {
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: 'Press Start 2P', cursive;
+        color: #f9cc03;
+        text-shadow: 3px 3px 3px #090909;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        top: 1rem;
+        left: 1rem;
+        z-index: 10;
+    }
+
+    .pipe-game {
+        position: absolute;
+        bottom: 70px;
+        width: 45px;
+        animation: pipe-animation 2.5s infinite linear;
+    }
+
+
+    .peach-game {
+        width: 50px;
+        position: absolute;
+        bottom: 70px;
+        left: 2rem;
+        z-index: 1;
+    }
+
+    .super-mario {
+        width: 85px;
+        position: absolute;
+        bottom: 65px;
+        z-index: 1;
+    }
+
+    .luigi-game {
+        width: 135px;
+        position: absolute;
+        bottom: 55px;
+        z-index: 1;
+    }
+
+    .jump-peach,
+    .jump-mario,
+    .jump-luigi {
+        animation: mario-animation 1500ms ease-out;
+    }
+
+    .ground-game {
+        position: absolute;
+        bottom: -22px;
+        height: 100vh;
+        overflow: hidden;
+        animation: ground-animation 1000s infinite linear;
+        z-index: 0;
+    }
+
+    .ground-game-peach {
+        position: absolute;
+        bottom: -22px;
+        height: 100vh;
+        overflow: hidden;
+        animation: ground-animation 1000s infinite linear;
+        z-index: 0;
+    }
+
+    @keyframes ground-animation {
+        from {
+            right: -8000px;
+        }
+    
+        to {
+            right: 500%;
+        }
+    }
 }

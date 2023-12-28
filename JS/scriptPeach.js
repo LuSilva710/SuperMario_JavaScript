@@ -22,12 +22,26 @@ const jump = () => {
     smallJump.play();
 };
 
+const handleJump = () => {
+    jump();
+};
+
+// Adiciona um listener para o evento de clique na tela
+document.addEventListener("click", handleJump);
+
+// Adiciona um listener para o evento de pressionar a tecla
+document.addEventListener("keydown", (event) => {
+    if (event.code === "Space") {
+        handleJump();
+    }
+});
+
 //condicional para parar as animações - game over
 const loopGame = setInterval(() => {
     audioStart.play();
-    const pipePosition = pipe.offsetLeft;
+    const pipePosition = pipe.offsetLeft;  
     const groundPosition = ground.offsetLeft;
-    const peachPosition = +window.getComputedStyle(peach).bottom.replace("px", "");
+    const peachPosition = +window.getComputedStyle(peach).bottom.replace("px", ""); 
 
     if (pipePosition <= 120 && pipePosition > 0 && peachPosition < 80) {
         pipe.style.animation = "none";
@@ -40,18 +54,18 @@ const loopGame = setInterval(() => {
         ground.style.left = `${groundPosition}px`
 
         peach.src = "./Imagens/peach-game-over.png";
-        peach.style.width = "115px";
+        peach.style.width = "85px";
         peach.style.marginLeft = "15px";
         audioStart.src = "Audio/audio_gameover.mp3";
         
-        gameOver.style.display = "block";
+        gameOver.style.display = "block";  
         restart.style.display = "block";
         clearInterval(loopGame);
 
     };
 }, 10);
 
-document.addEventListener("keydown", jump);
+//document.addEventListener("keydown", jump);
 
 
 //função score

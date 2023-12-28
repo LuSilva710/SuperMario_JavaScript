@@ -42,15 +42,29 @@
         width: 30px;
         line-height: 30px;
     }
+
+    .conteudo-modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        border-radius: 5px;
+        gap: 15px;
+    }
+
     .modal #player {
         width: 300px;
-        height: 169px;
+        height: 130px;
     }
 } 
 
 @media (max-width: 376px) {
     .modal #player {
         width: 250px;
-        height: 140px;
+    }
+
+    .playerselected {
+        font-size: 25px;
     }
 }
