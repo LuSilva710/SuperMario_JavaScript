@@ -22,6 +22,20 @@ const jump = () => {
     smallJump.play();
 };
 
+const handleJump = () => {
+    jump();
+};
+
+// Adiciona um listener para o evento de clique na tela
+document.addEventListener("click", handleJump);
+
+// Adiciona um listener para o evento de pressionar a tecla
+document.addEventListener("keydown", (event) => {
+    if (event.code === "Space") {
+        handleJump();
+    }
+});
+
 //condicional para parar as animações - game over
 const loopGame = setInterval(() => {
     audioStart.play();
@@ -49,8 +63,6 @@ const loopGame = setInterval(() => {
         clearInterval(loopGame);
     };
 }, 10);
-
-document.addEventListener("keydown", jump);
 
 //função score
 const marioScore = () => {

@@ -65,8 +65,6 @@ const loopGame = setInterval(() => {
     };
 }, 10);
 
-//document.addEventListener("keydown", jump);
-
 
 //função score
 const peachScore = () => {
